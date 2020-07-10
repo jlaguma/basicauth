@@ -1,0 +1,10 @@
+.alert-error {
+    background-color: red;
+    color: white;
+}
+.errorlist {
+    text-align: left;
+    color: red;
+    list-style: none;
+    padding-left: 0px;
+}

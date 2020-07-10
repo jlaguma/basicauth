@@ -1,0 +1,35 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+{% load static %}
+{% load widget_tweaks %}
+
+<div class="edit container text-center">
+    <h2>Edit Profile</h2>
+    <form  method="POST" action="{% url 'edit_profile' %}" class="register-form">
+        {% csrf_token %}
+        <p>
+            {{ form.username|add_class:"form-control"|attr:"placeholder:Username" }}
+            {{ form.username.errors }}
+        </p>
+        <p>
+            {{ form.first_name|add_class:"form-control"|attr:"placeholder:First Name" }}
+            {{ form.first_name.errors }}
+        </p>
+        <p>
+            {{ form.last_name|add_class:"form-control"|attr:"placeholder:Last Name" }}
+            {{ form.last_name.errors }}
+        </p>
+        <p>
+            {{ form.email|add_class:"form-control"|attr:"placeholder:Email address" }}
+            {{ form.email.errors }}
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+    </form>
+    <br/>
+    <p>
+        <small>
+            <a href="{% url 'change_password' %}">Change Password</a>
+        </small>
+    </p>
+</div>
+{% endblock content %}

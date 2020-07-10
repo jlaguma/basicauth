@@ -1,0 +1,16 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Welcome to Auth App!</h1>
+    <p class="lead text-muted">... basic user authentication components</p>
+  </div>
+</section>
+<div class="container">
+<div>Username: {{user.username}}</div>
+<div>First name: {{user.first_name}}</div>
+<div>Last name: {{user.last_name}}</div>
+<div>Email: {{user.email}}</div>
+</div>
+{% endblock %}
