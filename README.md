@@ -16,9 +16,9 @@ open: http://localhost:8000/
 
 ## Description
 
-A basic Django app to demonstrate authentication features offered by Django.
-Can be used if you coding entire page in Django.
-If you using Django just for back-end, I'd use API / JWT based authentication (with REST or GraphQL).
+A basic Django app to demonstrate authentication features offered by Django.  
+Can be used if you coding entire page in Django.  
+If you using Django just for back-end, I'd use API / JWT based authentication (with REST or GraphQL).  
 
 Following features are available:
 
